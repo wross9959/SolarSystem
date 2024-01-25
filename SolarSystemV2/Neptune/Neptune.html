@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptune</title>
+    <link rel="stylesheet" href="Neptune.css">
+</head>
+<body>
+    <div class="sidebar">
+        <!-- Navigation, Logo, and other header content here -->
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Planets</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <div class="planet-info">
+            <h1>Neptune</h1>
+            <p>Neptune is the smallest and innermost planet in the Solar System. ...</p>
+            <!-- Additional content here -->
+        </div>
+        <div class="planet-visualization">
+            <!-- 3D visualization of Neptune will go here -->
+        </div>
+    </div>
+    <button id="returnButton" onclick="returnToOverview()">Return to Solar System</button>
+
+     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://threejs.org/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="Neptune.js"></script>
+</body>
+</html>

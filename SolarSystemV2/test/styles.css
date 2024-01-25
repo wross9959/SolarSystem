@@ -1,0 +1,120 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #EAEAEA;
+    background-color: #0A0A0A;
+    line-height: 1.6;
+}
+
+header {
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #333, #111);
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FAFAFA;
+}
+
+nav .navigation li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav .navigation li a {
+    text-decoration: none;
+    color: #FAFAFA;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav .navigation li a:hover, nav .navigation li a:focus {
+    background-color: #555;
+    color: #FFF;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    padding: 2em;
+}
+
+#mercury-intro {
+    color: #FAFAFA;
+    padding-right: 2em;
+}
+
+#mercury-intro h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #FFF;
+}
+
+#mercury-intro p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    opacity: 0.85;
+}
+
+.sections .section {
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sections .section:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#mercury-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    text-align: center;
+    padding: 2em 0;
+    color: #aaa;
+    background: #111;
+    font-size: 0.85em;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    #mercury-intro {
+        grid-column: 1;
+    }
+
+    header, nav .navigation, footer {
+        text-align: center;
+    }
+
+    nav .navigation li {
+        display: block;
+        margin: 0.5em 0;
+    }
+}

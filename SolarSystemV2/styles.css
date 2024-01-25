@@ -1,0 +1,99 @@
+/* Reset default margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrollbars from appearing */
+}
+
+/* Ensures the canvas fills the whole window */
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000; /* Gives a space-like black background */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    color: #fff;
+}
+
+#planet-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    height: 100vh;
+}
+
+#info {
+    width: 40%;
+}
+
+#view {
+    width: 60%;
+    height: 100%;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #000;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #111; /* Adjust based on actual design */
+    padding: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.main-content {
+    margin-left: 250px;
+    display: flex;
+    height: 100%;
+}
+
+.planet-info {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.planet-visualization {
+    flex: 2;
+    /* The visualization container might need specific styling */
+}
+
+/* Additional styles for typography, buttons, and layout */
+#returnButton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+}
